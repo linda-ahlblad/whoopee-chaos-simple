@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whoopee Chaos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game-container">
+    <div id="intro-screen" class="screen active">
+      <h1>Whoopee Chaos</h1>
+      <p>The divine flatulence game of mythical proportions!</p>
+      <button id="start-button">Begin Divine Journey</button>
+    </div>
+    
+    <div id="game-screen" class="screen">
+      <div id="score-display">
+        <h2>Divine Chaos: <span id="score">0</span></h2>
+        <h3>Round: <span id="round">0</span></h3>
+        <div class="round-timer">
+          <div class="timer-bar">
+            <div id="timer-fill"></div>
+          </div>
+          <span id="time-left">30s</span>
+        </div>
+      </div>
+      
+      <div id="cushions-container"></div>
+      
+      <div id="divine-message"></div>
+    </div>
+    
+    <div id="game-over-screen" class="screen">
+      <h1>Divine Judgment</h1>
+      <p>You have caused chaos with <span id="final-score">0</span> divine eruptions!</p>
+      <p>You survived <span id="final-rounds">0</span> rounds!</p>
+      <p id="high-score-message" class="hidden">New High Score!</p>
+      <button id="restart-button">Ascend Again</button>
+    </div>
+  </div>
+  
+  <script src="game.js"></script>
+</body>
+</html>
